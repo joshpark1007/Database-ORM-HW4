@@ -1,0 +1,28 @@
+{
+  "name": "database-orm-hw4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init-db": "ts-node src/cli.ts init",
+    "sanity-check": "ts-node src/sanity-check.ts",
+    "runIncremental": "ts-node src/incremental/runIncremental.ts",
+    "full-load": "ts-node src/commands/fullLoad.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mysql2": "^3.15.3",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
